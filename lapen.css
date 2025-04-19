@@ -1,0 +1,167 @@
+/* style.css */
+
+body.main-bg {
+    background: linear-gradient(to bottom right, #ebf8ff, #ffffff);
+    min-height: 100vh;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(20px); }
+  }
+
+  .header {
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .subtitle {
+    color: #4b5563;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .grid-container-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .grid-container-3 {
+    display: grid;
+    gap: 1rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .text-muted {
+    font-size: 0.875rem;
+    color: #6b7280;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .text-blue {
+    color: #2563eb;
+  }
+  
+  .text-green {
+    color: #22c55e;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .btn-blue {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    animation: fadeIn 1s ease-in;
+  }
+
+  .matematika{
+    text-decoration: none;
+  }
+
+  .indonesia{
+    text-decoration: none;
+  }
+  
+  .latsol-indonesia{
+    text-decoration: none;
+  }
+
+  .latsol-matematika{
+    text-decoration: none;
+  }
+  .btn-outline {
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    background: transparent;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .mt {
+    margin-top: 0.5rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .progress-bar {
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    height: 0.625rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .progress-fill {
+    background-color: #22c55e;
+    height: 100%;
+    border-radius: 9999px;
+    animation: fadeIn 1s ease-in;
+  }
+  

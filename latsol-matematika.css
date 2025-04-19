@@ -1,0 +1,106 @@
+body {
+    background-color: #f0f9ff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(20px); }
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in;
+  }
+
+  h1 {
+    text-align: center;
+    color: #0284c7;
+  }
+
+  .quiz-box {
+    background-color: #e0f2fe;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .quiz-box h2 {
+    color: #0369a1;
+    margin-bottom: 1rem;
+  }
+
+  .question {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .options label {
+    display: block;
+    margin: 0.5rem 0;
+    background-color: #bae6fd;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .options label:hover {
+    background-color: #7dd3fc;
+  }
+
+  .submit-btn {
+    margin-top: 1.5rem;
+    background-color: #0ea5e9;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #0284c7;
+    transform: scale(1.05);
+  }
+
+  .result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #065f46;
+    font-weight: bold;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #0ea5e9;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .back-button:hover {
+    background-color: #0284c7;
+    transform: scale(1.05);
+  }
+
+  .fade-out {
+    animation: fadeOut 0.8s ease-out forwards;
+  }

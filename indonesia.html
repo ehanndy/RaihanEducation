@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahasa Indonesia - RaihanEducation</title>
+  <link rel="stylesheet" href="indonesia.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const backButton = document.querySelector(".back-button");
+      backButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = backButton.getAttribute("href");
+        }, 800);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Belajar Bahasa Indonesia</h1>
+
+    <div class="lesson-box">
+      <h2>Pengertian Kata Benda</h2>
+      <div class="lesson-step">
+        <strong>Apa itu Kata Benda?</strong>
+        Kata benda adalah kata yang digunakan untuk menyebut nama orang, tempat, hewan, benda, atau ide.
+      </div>
+      <div class="lesson-step">
+        <strong>Contoh:</strong>
+        Ibu, sekolah, kucing, meja, dan kebahagiaan.
+        <div class="example">Contoh kalimat: Ibu pergi ke pasar.</div>
+      </div>
+    </div>
+
+    <div class="lesson-box">
+      <h2>Kalimat Sederhana</h2>
+      <div class="lesson-step">
+        <strong>Apa itu Kalimat Sederhana?</strong>
+        Kalimat sederhana adalah kalimat yang terdiri dari satu subjek dan satu predikat.
+      </div>
+      <div class="lesson-step">
+        <strong>Contoh:</strong>
+        Ani membaca. Budi berlari. Kucing tidur.
+        <div class="example">Contoh kalimat: Ayah memasak.</div>
+      </div>
+    </div>
+
+    <div class="lesson-box">
+      <h2>Latihan Mini</h2>
+      <div class="lesson-step">
+        <strong>Lengkapi Kalimat:</strong>
+        1. Ibu sedang ... di dapur.<br>
+        2. Andi dan Sita pergi ke ...<br>
+        3. ... makan rumput di lapangan.<br>
+        4. Ayah membaca ... di ruang tamu.
+      </div>
+    </div>
+
+    <a class="back-button" href="lapen.html">⬅ Kembali ke Menu</a>
+  </div>
+</body>
+</html>

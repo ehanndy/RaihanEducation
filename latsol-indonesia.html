@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Soal Bahasa Indonesia - RaihanEducation</title>
+  <link rel="stylesheet" href="latsol-indonesia.css">
+  <style>
+   
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const backButton = document.querySelector(".back-button");
+      backButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = backButton.getAttribute("href");
+        }, 800);
+      });
+
+      const form = document.querySelector("#quiz-form");
+      const result = document.querySelector(".result");
+
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const correctAnswers = ["a", "c", "b"];
+        let score = 0;
+        correctAnswers.forEach((answer, i) => {
+          if (form[`q${i+1}`].value === answer) score++;
+        });
+        result.textContent = `Jawaban benar: ${score} dari 3 soal.`;
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Latihan Soal Bahasa Indonesia</h1>
+
+    <form id="quiz-form" class="quiz-box">
+      <h2>Soal 1</h2>
+      <div class="question">Kata "rumah" termasuk dalam jenis kata ...</div>
+      <div class="options">
+        <label><input type="radio" name="q1" value="a"> a. Benda</label>
+        <label><input type="radio" name="q1" value="b"> b. Kerja</label>
+        <label><input type="radio" name="q1" value="c"> c. Sifat</label>
+      </div>
+
+      <h2>Soal 2</h2>
+      <div class="question">Sinonim dari kata "besar" adalah ...</div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> a. Panjang</label>
+        <label><input type="radio" name="q2" value="b"> b. Kecil</label>
+        <label><input type="radio" name="q2" value="c"> c. Gede</label>
+      </div>
+
+      <h2>Soal 3</h2>
+      <div class="question">Kalimat yang berisi ajakan disebut ...</div>
+      <div class="options">
+        <label><input type="radio" name="q3" value="a"> a. Kalimat tanya</label>
+        <label><input type="radio" name="q3" value="b"> b. Kalimat perintah</label>
+        <label><input type="radio" name="q3" value="c"> c. Kalimat berita</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Kirim Jawaban</button>
+      <div class="result"></div>
+    </form>
+
+    <a class="back-button" href="lapen.html">⬅ Kembali ke Menu</a>
+  </div>
+</body>
+</html>

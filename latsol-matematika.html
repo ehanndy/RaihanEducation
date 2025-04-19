@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Soal Matematika - RaihanEducation</title>
+  <link rel="stylesheet" href="latsol-matematika.css">
+  <style>
+   
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const backButton = document.querySelector(".back-button");
+      backButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = backButton.getAttribute("href");
+        }, 800);
+      });
+
+      const form = document.querySelector("#quiz-form");
+      const result = document.querySelector(".result");
+
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const correctAnswers = ["b", "a", "c"];
+        let score = 0;
+        correctAnswers.forEach((answer, i) => {
+          if (form[`q${i+1}`].value === answer) score++;
+        });
+        result.textContent = `Jawaban benar: ${score} dari 3 soal.`;
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Latihan Soal Matematika Dasar</h1>
+
+    <form id="quiz-form" class="quiz-box">
+      <h2>Soal 1</h2>
+      <div class="question">Berapakah 3 + 4 = ...</div>
+      <div class="options">
+        <label><input type="radio" name="q1" value="a"> a. 6</label>
+        <label><input type="radio" name="q1" value="b"> b. 7</label>
+        <label><input type="radio" name="q1" value="c"> c. 8</label>
+      </div>
+
+      <h2>Soal 2</h2>
+      <div class="question">Berapakah hasil dari 5 - 2 = ...</div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> a. 3</label>
+        <label><input type="radio" name="q2" value="b"> b. 2</label>
+        <label><input type="radio" name="q2" value="c"> c. 4</label>
+      </div>
+
+      <h2>Soal 3</h2>
+      <div class="question">2 + 2 + 2 = ...</div>
+      <div class="options">
+        <label><input type="radio" name="q3" value="a"> a. 5</label>
+        <label><input type="radio" name="q3" value="b"> b. 8</label>
+        <label><input type="radio" name="q3" value="c"> c. 6</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Kirim Jawaban</button>
+      <div class="result"></div>
+    </form>
+
+    <a class="back-button" href="lapen.html">⬅ Kembali ke Menu</a>
+  </div>
+</body>
+</html>

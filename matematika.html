@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matematika Dasar - RaihanEducation</title>
+  <link rel="stylesheet" href="matematika.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const backButton = document.querySelector(".back-button");
+      backButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = backButton.getAttribute("href");
+        }, 800);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Belajar Matematika Dasar</h1>
+
+    <div class="lesson-box">
+      <h2>Penjumlahan</h2>
+      <div class="lesson-step">
+        <strong>Apa itu Penjumlahan?</strong>
+        Penjumlahan adalah proses menambahkan dua atau lebih angka untuk mendapatkan hasil.
+      </div>
+      <div class="lesson-step">
+        <strong>Contoh:</strong>
+        Jika kamu punya 2 apel dan ditambah 3 apel lagi, kamu punya berapa?
+        <div class="example">2 + 3 = 5 🍎</div>
+      </div>
+    </div>
+
+    <div class="lesson-box">
+      <h2>Pengurangan</h2>
+      <div class="lesson-step">
+        <strong>Apa itu Pengurangan?</strong>
+        Pengurangan adalah proses mengurangi satu angka dari angka lainnya.
+      </div>
+      <div class="lesson-step">
+        <strong>Contoh:</strong>
+        Kamu punya 5 permen, lalu dimakan 2. Berapa sisa permenmu?
+        <div class="example">5 - 2 = 3 🍬</div>
+      </div>
+    </div>
+
+    <div class="lesson-box">
+      <h2>Latihan Mini</h2>
+      <div class="lesson-step">
+        <strong>Coba Hitung:</strong>
+        4 + 1 = ...<br>
+        7 - 3 = ...<br>
+        6 + 2 = ...<br>
+        5 - 1 = ...
+      </div>
+    </div>
+
+    <a class="back-button" href="lapen.html">⬅ Kembali ke Menu</a>
+  </div>
+</body>
+</html>
